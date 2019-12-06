@@ -35,9 +35,9 @@ function rotate(nums,steps) {
         let length = nums.length;
         //实际数组移动步数为steps对数组长度的取余,
         //因为移动步数如果等于数组长度数相对于原数组没有任何变化.
-        let actStep = steps%length;
-        //再进行actStep次循环,每次循环对数组数据进行前后复制
-        for(let i=0;i<actStep;i++){
+        steps = steps%length;
+        //再进行steps次循环,每次循环对数组数据进行前后复制
+        for(let i=0;i<steps;i++){
             let last = nums[length-1];
             for(let j=length-1;j>0;j--){
                 nums[j] = nums[j-1]
