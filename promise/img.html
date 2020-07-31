@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            display: block;
+            font-family: Helvetica, Arial, sans-serif;
+            font-weight: 300;
+            height: auto;
+            line-height: 2;
+            position: relative;
+            text-align: center;
+            width: 100%;
+        }
+
+        img:before {
+            content: "We're sorry, the image below is missing :(";
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        img:after {
+            content: "(url: "attr(src) ")";
+            display: block;
+            font-size: 12px;
+        }
+
+        .container{
+            margin: 30px auto;
+            border: 1px solid #ddd;
+            width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="http://gaofen-cdn.mlogcn.com/gaofen_static/hme/1.png" alt="">
+    </div>
+
+</body>
+
+</html>
