@@ -24,9 +24,9 @@ MyPromise.prototype.then = function(onFullFilled){
     });
 };
 
-new MyPromise(resolev=>{
+new MyPromise(resolve=>{
     setTimeout(()=>{
-        resolev(1);
+        resolve(1);
     },500)
 }).then(res=>{
     console.log(res);
